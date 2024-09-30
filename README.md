@@ -56,4 +56,4 @@
 - **Contributors:** [List any others if applicable]
 
 #### **8. License:**
-[Include any licensing information, such as MIT License or Creative Commons.]
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
