@@ -1,153 +1,130 @@
 # 🚀 The Time Traveler's Dilemma
 
-**The Time Traveler's Dilemma** is an AI-powered text-based adventure game where players explore the consequences of altering time. With the ability to communicate with their past selves, players must make decisions that impact the future, leading to multiple outcomes in an ever-changing storyline. The game features natural language processing and machine learning, providing a dynamic narrative experience every time it is played.
-
----
+"The Time Traveler's Dilemma" is an AI-powered text-based adventure game where players navigate time, interact with their past selves, and make choices that alter the timeline. Players face five key decision points that branch into multiple outcomes, leading to different endings. This game utilizes AI to generate dynamic storylines and adaptive character responses.
 
 ## ✨ Features
-- **🌍 Branching Storyline**: Explore five key decision points, each leading to different outcomes and multiple possible endings.
-- **🤖 AI-Driven Story Generation**: The game adapts to player decisions using machine learning, dynamically generating unique dialogue, plot twists, and events.
-- **🗣️ Natural Language Processing**: Players interact with the game through natural text inputs, making decisions that alter the timeline.
-- **⏳ Time Travel Mechanic**: Travel back in time and interact with your past self, making decisions that influence the future.
-- **🦋 Butterfly Effect**: Small choices have massive ripple effects, altering the entire game world.
-- **🎮 Retro-inspired ASCII Art**: Enjoy optional retro ASCII art visuals that pay homage to classic text-based adventure games.
-- **🎼 AI-Generated Music**: The soundtrack adapts dynamically to the player's decisions, enhancing the immersive experience.
-- **⚖️ Dynamic Difficulty Adjustment**: The game adjusts its challenge based on the player’s performance.
 
----
+- 🕒 **Time Travel Mechanics:** Travel through different periods and communicate with your past selves to alter the future.
+- 🦋 **Butterfly Effect:** Every choice impacts the game world, with small changes causing significant consequences.
+- 🤖 **AI-Driven Story Generation:** The game adapts based on player decisions, generating new dialogues and plot twists.
+- 🎨 **Retro-inspired ASCII Art:** Optional retro visuals add nostalgia to the gameplay.
+- 🎶 **AI-Generated Music:** The dynamic AI soundtrack adapts based on the player's actions and game progress.
+- 🎮 **Branching Storyline with Multiple Endings:** Each playthrough offers unique outcomes based on your decisions.
 
 ## 🛠️ How It Works
-1. **📑 Branching Story Structure**: A graph data structure manages the flow of the story, with nodes representing events and edges representing player choices.
-2. **🧠 Contextual Story Generation**: The AI uses player inputs and previous choices to dynamically generate new story content each time.
-3. **⌛ Time Travel Paradoxes**: Players interact with past versions of themselves, altering key moments in the storyline.
-4. **🦋 Butterfly Effect System**: Seemingly small decisions can lead to major changes, influencing the entire timeline.
 
----
+- **Story Graph:** The game uses a story graph to manage narrative branches, with nodes representing events and edges representing transitions.
+- **AI-Powered Dynamic Responses:** The AI adjusts NPC responses and plot elements depending on the player's previous actions.
+- **Natural Language Processing (NLP):** The game uses AI to process text-based commands, making the interaction more natural.
+- **Dynamic Difficulty Adjustment:** The AI adjusts the difficulty level based on player performance.
 
 ## 🧩 Installation
 
-📋 **Prerequisites**:
-- Python 3.x
-- NLP library: NLTK or spaCy
-- Machine Learning library: TensorFlow or PyTorch
-- ASCII art library (optional for UI visuals)
+Watch the [YouTube setup video](#) for a detailed explanation.
 
-### 🔧 Configuration:
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/YourUsername/The-Time-Travelers-Dilemma.git
-   cd The-Time-Travelers-Dilemma
-   ```
+### 📋 Prerequisites
 
-2. **Install the Required Libraries**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Dart SDK version 2.15.0 or higher installed on your system.
+- A Google Cloud or other NLP API key for natural language processing capabilities.
 
-3. **Set Up the Environment**:
-   - Download and configure your NLP and machine learning models.
-   - Ensure your Python environment has access to the necessary libraries (NLTK, TensorFlow/PyTorch).
+### 🔐 Set Up AI Model APIs
 
-4. **Run the Application**:
-   ```bash
-   python main.py
-   ```
+#### **Dart Packages:**
 
----
+- **NLP for Dart:** No standard NLP library exists for Dart like `nltk`, but you can use REST APIs such as Google's NLP API for processing.
+- **Machine Learning:** Use TensorFlow via a Dart binding or connect to a TensorFlow server through REST APIs.
 
-## 📦 Libraries
+#### **Google Cloud NLP API:**
 
-The game uses the following libraries:
-- **NLTK** or **spaCy**: For natural language processing to understand and process player inputs.
-- **TensorFlow** or **PyTorch**: For the machine learning aspects of dynamic story generation.
-- **PyPDF2**: For reading and processing player interactions with in-game texts.
-- **Requests**: For making HTTP requests when necessary for AI integrations.
-- **Tkinter**: To provide a user-friendly retro ASCII art interface.
-- **Keyboard**: For command-based player inputs and navigation.
+1. Sign up at Google Cloud and obtain your API key.
+2. Replace `"your_google_nlp_api_key_here"` in the script with your actual API key.
 
----
+### 🔧 Configuration
+
+1. Open the main Dart file (e.g., `main.dart`) in your preferred editor.
+2. Update the API keys and endpoints as necessary for NLP services.
+3. Ensure your resources (like audio files for background music) are correctly referenced in the `assets` folder.
+
+## 📦 Dependencies
+
+The game requires the following Dart packages:
+
+- **http:** For making REST API calls to AI models.
+- **flutter:** For GUI and visual elements (if running with Flutter for cross-platform capabilities).
+- **flutter_tts:** For Text-to-Speech, if needed for character dialogue.
+- **path_provider:** For managing file paths and resources.
+- **audiofileplayer:** For AI-generated background music integration.
 
 ## 📄 Requirements File
-All necessary dependencies are listed in the `requirements.txt` file. To install them, run:
 
-```bash
-pip install -r requirements.txt
+In **Dart**, the equivalent of `requirements.txt` is the **pubspec.yaml** file:
+
+```yaml
+name: time_travelers_dilemma
+description: An AI-powered text-based adventure game with time travel mechanics.
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.4
+  path_provider: ^2.0.11
+  flutter_tts: ^3.3.2
+  audiofileplayer: ^1.0.0
 ```
 
----
+### Install the dependencies:
+
+```bash
+flutter pub get
+```
 
 ## ▶️ Running the Application
 
-### Method 1: Using a Virtual Environment (Recommended)
-1. **Create and Activate a Virtual Environment**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # for Linux/macOS
-   venv\Scripts\activate      # for Windows
-   ```
+### Method 1: Using Flutter
 
-2. **Install Required Libraries**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your_repo/Time_Travelers_Dilemma.git
+    cd Time_Travelers_Dilemma
+    ```
 
-3. **Run the Game**:
-   ```bash
-   python main.py
-   ```
+2. Run the game on an emulator or connected device:
+    ```bash
+    flutter run
+    ```
 
-4. **Deactivate the Virtual Environment** (when finished):
-   ```bash
-   deactivate
-   ```
+### Method 2: Standalone Dart Console Application
 
-### Method 2: Normal Setup (Without Virtual Environment)
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/YourUsername/EpochExplorerAI
-   cd EpochExplorerAI
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Game**:
-   ```bash
-   python main.py
-   ```
-
----
+1. Ensure Dart SDK is installed and configured.
+2. Run the application:
+    ```bash
+    dart run main.dart
+    ```
 
 ## 🤝 Contributing
-Contributions are welcome! Whether you're improving the code, fixing bugs, or suggesting new features, we appreciate all contributions. To contribute:
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
 
----
+- Rahul Vadisetty: Game design, AI integration, and storyline development.
+- Contributors: Anand Polamarasetti
+
+- Fork the repository.
+- Create your feature branch (`git checkout -b feature/YourFeature`).
+- Commit your changes (`git commit -m 'Add some feature'`).
+- Push to the branch (`git push origin feature/YourFeature`).
+- Open a pull request.
 
 ## 💼 Applications
 
-The Time Traveler's Dilemma can be enjoyed in various contexts, including:
-
-- **🎮 Gamers**: Experience an ever-evolving story that changes based on decisions you make.
-- **📚 Narrative Enthusiasts**: Engage with dynamically generated storylines that ensure each playthrough is unique.
-- **🧠 AI and NLP Learning**: Learn about the use of AI in interactive storytelling through a practical example.
-
----
+- **AI Competitions:** This project is ideal for AI game design competitions.
+- **Educational Tool:** Players can learn about time travel concepts and the butterfly effect through gameplay.
+- **Entertainment:** A fun and engaging experience for gamers who enjoy story-driven adventures.
 
 ## 📝 Conclusion
 
-**The Time Traveler's Dilemma** is a unique and innovative text-based adventure that blends AI-powered narrative generation with engaging gameplay mechanics. By allowing players to communicate with their past selves and explore the consequences of their actions, the game offers a dynamic and evolving experience.
+"The Time Traveler's Dilemma" is an innovative text-based adventure game that combines AI-driven story generation with time travel mechanics. The game's multiple endings, adaptive character responses, and dynamic difficulty adjustment make it a unique and immersive experience.
 
----
-#### Contribution:
-- Rahul Vadisetty: Game design, AI integration, and storyline development.
-- Contributors: Anand Polamarasetti
 
 #### License:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
