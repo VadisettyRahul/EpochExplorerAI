@@ -106,8 +106,8 @@ flutter pub get
 
 ## 🤝 Contributing
 
-- Rahul Vadisetty: Game design, AI integration, and storyline development.
-- Contributors: Anand Polamarasetti
+- Rahul Vadisetty and Anand Polamarasetti: Game design, AI integration, and  storyline  development.
+- Contributors: 
 
 - Fork the repository.
 - Create your feature branch (`git checkout -b feature/YourFeature`).
