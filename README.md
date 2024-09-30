@@ -104,8 +104,8 @@ pip install -r requirements.txt
 ### Method 2: Normal Setup (Without Virtual Environment)
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YourUsername/The-Time-Travelers-Dilemma.git
-   cd The-Time-Travelers-Dilemma
+   git clone https://github.com/YourUsername/EpochExplorerAI
+   cd EpochExplorerAI
    ```
 
 2. **Install Dependencies**:
@@ -145,9 +145,9 @@ The Time Traveler's Dilemma can be enjoyed in various contexts, including:
 **The Time Traveler's Dilemma** is a unique and innovative text-based adventure that blends AI-powered narrative generation with engaging gameplay mechanics. By allowing players to communicate with their past selves and explore the consequences of their actions, the game offers a dynamic and evolving experience.
 
 ---
-#### 7. Contribution:
+#### Contribution:
 - Rahul Vadisetty: Game design, AI integration, and storyline development.
 - Contributors: Anand Polamarasetti
 
-#### **8. License:**
+#### License:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
