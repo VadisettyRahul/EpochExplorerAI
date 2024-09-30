@@ -1,3 +1,5 @@
+<img src="./assets/timetraveller.jpg">
+
 # 🚀 The Time Traveler's Dilemma
 
 "The Time Traveler's Dilemma" is an AI-powered text-based adventure game where players navigate time, interact with their past selves, and make choices that alter the timeline. Players face five key decision points that branch into multiple outcomes, leading to different endings. This game utilizes AI to generate dynamic storylines and adaptive character responses.
