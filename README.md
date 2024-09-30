@@ -1,4 +1,5 @@
-<img src="./assets/timetraveller.jpg">
+<img src="./image/timetraveller1.jpg">
+<img src="./image/timetraveller.jpg">
 
 # 🚀 The Time Traveler's Dilemma
 
